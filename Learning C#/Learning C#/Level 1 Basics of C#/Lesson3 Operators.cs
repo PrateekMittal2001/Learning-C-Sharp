@@ -1,4 +1,6 @@
-﻿namespace Complete_C_.Level_1
+﻿// 🧮 Lesson 3: Operators in C#
+
+namespace Complete_C_.Level_1
 {
     public class Lesson3
     {
