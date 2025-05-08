@@ -1,0 +1,147 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Pattern 1
+        //A
+        //B B
+        //C C C
+        //D D D D
+        //E E E E E
+        //F F F F F F
+        //G G G G G G G
+        //H H H H H H H H
+        //I I I I I I I I I
+        //J J J J J J J J J J
+
+        //int n = 10;
+        //char a = 'A';
+        //for (int i = 0; i < n; i++)
+        //{
+        //    for (int j = 0; j <= i; j++)
+        //    {
+        //        Console.Write(a);
+        //        Console.Write(' ');
+        //    }
+        //    a = (char)( a + 1);
+        //    Console.Write('\n');
+        //}
+
+
+        //Pattern 2
+        //********************
+        //*                  *
+        //*                  *
+        //*                  *
+        //*                  *
+        //*                  *
+        //*                  *
+        //*                  *
+        //*                  *
+        //********************
+        //int n = 10, max = 20;
+
+        //for (int i = 1; i <= n; i++)
+        //{
+        //    for (int j = 1; j <= max; j++)
+        //    {
+        //        if (i == 1 || i == n || j == 1 || j == max)
+        //            Console.Write('*');
+        //        else
+        //            Console.Write(' ');
+        //    }
+        //    Console.Write('\n');
+        //}
+
+
+        //Pattern 3
+        //1 2 3 4 5 6 7 8 9
+        //1 2 3 4 5 6 7 8
+        //1 2 3 4 5 6 7
+        //1 2 3 4 5 6
+        //1 2 3 4 5
+        //1 2 3 4
+        //1 2 3
+        //1 2
+        //1
+        //1 2
+        //1 2 3
+        //1 2 3 4
+        //1 2 3 4 5
+        //1 2 3 4 5 6
+        //1 2 3 4 5 6 7
+        //1 2 3 4 5 6 7 8
+        //1 2 3 4 5 6 7 8 9
+
+        //int n = 9;
+        //for (int i = 1; i <= n - 1 ; i++)
+        //{
+        //    for (int j = 1; j <= n - i + 1; j++)
+        //    {
+        //        Console.Write(j);
+        //        Console.Write(' ');
+        //    }
+        //    Console.Write('\n');
+        //}
+        //for (int i = 1; i <= n; i++)
+        //{
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        Console.Write(j);
+        //        Console.Write(' ');
+        //    }
+        //    Console.Write('\n');
+        //}
+
+        // => Converting to 1 loop
+        //int n = 9;
+        //for (int i = 1; i <= 2 * n - 1; i++)
+        //{
+        //    int limit = i <= n ? n - i + 1 : i - n + 1;
+        //    for (int j = 1; j <= limit; j++)
+        //    {
+        //        Console.Write(j + " ");
+        //    }
+        //    Console.WriteLine();
+        //}
+
+        //Pattern 4
+        //*
+        //**
+        //***
+        //****
+        //*****
+        //****
+        //***
+        //**
+        //*
+        //int n = 5;
+        //for (int i = 0; i < n - 1; i++)
+        //{
+        //    for (int j = 0; j <= i; j++)
+        //    {
+        //        Console.Write('*');
+        //    }
+        //    Console.Write('\n');
+        //}
+        //for (int i = n - 1; i >= 0; i--)
+        //{
+        //    for (int j = 0; j <= i; j++)
+        //    {
+        //        Console.Write('*');
+        //    }
+        //}
+
+        // => Converting to the 1 Loop
+        //int n = 5;
+        //for (int i = 1; i <= 2 * n - 1; i++)
+        //{
+        //    int limit = i < n ? i : 2 * n - i;
+        //    for (int j = 1; j <= limit; j++)
+        //    {
+        //        Console.Write('*');
+        //    }
+        //    Console.Write('\n');
+        //}
+    }
+}
